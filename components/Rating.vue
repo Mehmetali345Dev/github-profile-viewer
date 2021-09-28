@@ -33,7 +33,7 @@ export default {
       var biop = 50
       var websitep = 40
       if (this.data.bio.length < 100) {
-        biop = 50
+        biop = -50
       }
       if (this.data.twitter_username === null) {
         twitterp = -10

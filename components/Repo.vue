@@ -21,8 +21,8 @@
           <h1>{{ data.language }}</h1>
         </div>
       </div>
-      <div class="md:flex space-x-2 mt-1">
-        <h1 class="flex">
+      <div class="md:flex items-center space-x-2 mt-1">
+        <h1 class="flex items-end">
           <svg
             height="490pt"
             viewBox="0 -35 490.91 490"
@@ -37,7 +37,7 @@
           </svg>
           {{ getLicense }}
         </h1>
-        <h1 v-if="data.fork">Forked</h1>
+        <h1 v-if="data.fork" class="text-sm font-bold">Forked</h1>
       </div>
     </div>
   </a>

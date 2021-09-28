@@ -1,6 +1,6 @@
 <template>
-  <a :href="data.html_url" target="_blank" rel="noopener noreferrer">
-    <div class="grid p-4 bg-gray-800 rounded-md">
+  <a :href="data.html_url" target="_blank" :title="data.description" rel="noopener noreferrer">
+    <div class="grid p-4 bg-gray-800 h-full rounded-md">
       <div class="flex justify-between">
         <div class="grid">
           <h1 class="font-bold text-lg">{{ data.name }}</h1>

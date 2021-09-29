@@ -1,6 +1,6 @@
 <template>
   <div class="px-2 text-gray-50 py-4 bg-gray-800 rounded-xl">
-    <img :src="data.avatar_url" class="rounded-full w-64" :alt="data.login" />
+    <img :src="data.avatar_url" class="rounded-full mb-2" :alt="data.login" />
     <div class="flex flex-col space-y-2 justify-center mx-4">
       <h1 class="text-xl font-bold">{{ data.login }}</h1>
       <p class="w-64">{{ data.bio }}</p>
@@ -39,7 +39,7 @@
         {{ getWebsite }}
       </a>
     </div>
-    <Rating :data="data" />
+    <Rating :data="data" class="m-4" />
   </div>
 </template>
 

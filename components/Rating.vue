@@ -1,21 +1,25 @@
 <template>
-  <div class="grid items-center space-y-2 m-4">
-    <h1 class="text-xl font-bold">Basic Rating</h1>
-    <h1 class="ratings bg-red-800 rounded-md p-2">Total: {{ rateUser().total }}</h1>
+  <details>
+    <summary class="font-bold text-xl">
+      Basic Rating
+    </summary>
+    <div class="grid w-64 items-center space-y-2">
+      <h1 class="ratings bg-red-800 rounded-md p-2">Total: {{ rateUser().total }}</h1>
 
-    <div>
-      <h1 class="ratings">Twitter: {{ rateUser().twitterp }}</h1>
-      <p>If you have a Twitter link in your Github account you will receive a 10 points.</p>
+      <div>
+        <h1 class="ratings">Twitter: {{ rateUser().twitterp }}</h1>
+        <p>If you have a Twitter link in your Github account you will receive a 10 points.</p>
+      </div>
+      <div>
+        <h1 class="ratings">Bio: {{ rateUser().biop }}</h1>
+        <p>If your bio is longer than 100 characters you will receive a 50 points.</p>
+      </div>
+      <div>
+        <h1 class="ratings">Website: {{ rateUser().websitep }}</h1>
+        <p>If you have a website link in your Github account you will receive a 40 points.</p>
+      </div>
     </div>
-    <div>
-      <h1 class="ratings">Bio: {{ rateUser().biop }}</h1>
-      <p>If your bio is longer than 100 letter you will receive a 50 points.</p>
-    </div>
-    <div>
-      <h1 class="ratings">Website: {{ rateUser().websitep }}</h1>
-      <p>If you have a website link in your Github account you will receive a 40 points.</p>
-    </div>
-  </div>
+  </details>
 </template>
 
 <script>
